@@ -7,11 +7,13 @@
 
   home.packages = [
     pkgs.bat
+    pkgs.unzip
   ];
 
   imports = [
     ./ssh.nix
     ./git.nix
+    ./nvim.nix
   ];
 
   programs.home-manager.enable = true;
