@@ -8,12 +8,12 @@
   home.packages = [
     pkgs.bat
     pkgs.unzip
+    pkgs.neovim
   ];
 
   imports = [
     ./ssh.nix
     ./git.nix
-    ./nvim.nix
   ];
 
   programs.home-manager.enable = true;
