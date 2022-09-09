@@ -12,14 +12,15 @@
   home.packages = [
     pkgs.bat
     pkgs.unzip
-    pkgs.neovim
   ];
 
   imports = [
     ./ssh.nix
     ./git.nix
     ./bash.nix
+    ./nvim
   ];
 
   programs.home-manager.enable = true;
 }
+
