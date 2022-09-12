@@ -19,6 +19,7 @@ in
           nvim-tree-lua
           bufferline-nvim
           vim-bbye
+          lualine-nvim
         ];
     };
 
