@@ -94,5 +94,8 @@ vmap("<A-k>",":m '<-2<CR>gv==gv")
 -- keep the yanked value in register after it was copied on top of another work
 vmap("p","\"_dp")
 
+-- Plugins maps
+nmap("<leader>e",":NvimTreeToggle<CR>")
+
 -- theme
 vim.cmd[[colorscheme gruvbox]]
