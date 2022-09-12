@@ -8,7 +8,7 @@ in
     programs.neovim = {
       enable = true;
       extraConfig = ''
-        :luafile ~/.config/nvim/lua/init.lua
+        :luafile ~/.config/nvim/lua/georgian/init.lua
       '';
       plugins = with pkgs.vimPlugins;
         let
