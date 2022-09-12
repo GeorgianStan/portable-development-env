@@ -17,6 +17,8 @@ in
       	  gruvbox-community
           nvim-web-devicons
           nvim-tree-lua
+          bufferline-nvim
+          vim-bbye
         ];
     };
 

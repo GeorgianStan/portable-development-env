@@ -17,6 +17,7 @@ end
 local opt = vim.opt
 local g = vim.g
 local HOME = os.getenv("HOME")
+
 opt.number = true
 opt.relativenumber = true
 
@@ -95,7 +96,13 @@ vmap("<A-k>",":m '<-2<CR>gv==gv")
 vmap("p","\"_dp")
 
 -- Plugins maps
-nmap("<leader>e",":NvimTreeToggle<CR>")
+
+-- Nvim Tree Lua
+nmap("<leader>e",":NvimTreeToggle <CR>")
+-- Buffer Line
+map("","<S-l>",":bnext <CR>")
+map("","<S-h>",":bprevious <CR>")
+nmap("<S-w>",":Bdelete! <CR>")
 
 -- theme
 vim.cmd[[colorscheme gruvbox]]
