@@ -20,7 +20,14 @@ in
           bufferline-nvim
           vim-bbye
           lualine-nvim
+          nvim-lspconfig
         ];
+      extraPackages = with pkgs; [
+        nodejs-16_x
+        # Typescript
+        nodePackages.typescript
+        nodePackages.typescript-language-server
+      ];
     };
 
      xdg.configFile.nvim = {
