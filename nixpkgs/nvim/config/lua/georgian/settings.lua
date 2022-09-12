@@ -16,7 +16,7 @@ end
 
 local opt = vim.opt
 local g = vim.g
-
+local HOME = os.getenv("HOME")
 opt.number = true
 opt.relativenumber = true
 
@@ -24,6 +24,10 @@ opt.clipboard = "unnamedplus"
 opt.mouse = "a"
 
 opt.hidden = true
+
+opt.undodir = HOME .. "/.nvim/undodir";
+opt.undofile = true
+
 opt.swapfile = false
 
 opt.showmode = false
